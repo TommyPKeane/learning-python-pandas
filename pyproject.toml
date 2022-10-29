@@ -2,8 +2,15 @@
 name = "pandas-demos"
 version = "0.1.0"
 description = "Custom demos and examples for Python's pandas Package for Data Processing and Data Management"
-authors = ["Tommy P. Keane <talk.to.tommypkeane@gmail.com>"]
-license = "CC BY-SA 4.0"
+authors = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+maintainers = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+homepage = "https://www.tommypkeane.com"
+repository = "https://github.com/TommyPKeane/pandas_demos"
+license = "MIT"
 readme = "README.md"
 packages = [{include = "pandas_demos"}]
 
@@ -42,7 +49,6 @@ testpaths = [
 ]
 
 [tool.coverage.run]
-
 source = [
     "pandas_demos",
 ]
@@ -375,9 +381,7 @@ known-third-party = ["enchant"]
 # preferred-modules =
 
 [tool.pylint.logging]
-# The type of string formatting that logging methods do. `old` means using %
-# formatting, `new` is for `{}` formatting.
-logging-format-style = "old"
+logging-format-style = "new"
 
 # Logging modules to check that the string format arguments are in logging
 # function parameter format.
@@ -397,7 +401,19 @@ confidence = ["HIGH", "CONTROL_FLOW", "INFERENCE", "INFERENCE_FAILURE", "UNDEFIN
 # --enable=similarities". If you want to run only the classes checker, but have
 # no Warning level messages displayed, use "--disable=all --enable=classes
 # --disable=W".
-disable = ["raw-checker-failed", "bad-inline-option", "locally-disabled", "file-ignored", "suppressed-message", "useless-suppression", "deprecated-pragma", "use-symbolic-message-instead"]
+disable = [
+    "bad-inline-option",
+    "deprecated-pragma",
+    "file-ignored",
+    "locally-disabled",
+    "logging-fstring-interpolation",
+    "raw-checker-failed",
+    "similarities",
+    "suppressed-message",
+    "use-symbolic-message-instead",
+    "useless-suppression",
+    "useless-return",
+]
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
@@ -450,19 +466,10 @@ evaluation = "max(0, 0 if fatal else 10.0 - ((float(5 * error + warning + refact
 score = true
 
 [tool.pylint.similarities]
-# Comments are removed from the similarity computation
 ignore-comments = true
-
-# Docstrings are removed from the similarity computation
 ignore-docstrings = true
-
-# Imports are removed from the similarity computation
 ignore-imports = true
-
-# Signatures are removed from the similarity computation
 ignore-signatures = true
-
-# Minimum lines number of a similarity.
 min-similarity-lines = 4
 
 [tool.pylint.spelling]
