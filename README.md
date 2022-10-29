@@ -2,6 +2,8 @@
 
 Example code using the Python `pandas` package for demonstration and (educational) reference.
 
+See here: https://pandas.pydata.org/docs/
+
 The `pandas` library provides a `Series`, `DataFrame`, and `MultiIndexDataFrame` set of utility functions and classes for organising, accessing, and processing tabular data (JSONs, CSVs, Parquet files, _etc._). Some of the syntax and implementation is non-standard in comparison to most Python code, so this reference repository should be a helpful means of pointing out some of the quirks of using `pandas`.
 
 I created this repository to help remind myself how the `pandas` syntax works, and to test out some other features. This is available for general reference, in case it's helpful to anyone else.
@@ -12,6 +14,7 @@ I created this repository to help remind myself how the `pandas` syntax works, a
 - Local Package: `pandas_demos`
 - Testing
     - Unit-Tests
+- License \(Copyright\)
 
 <!-- /MarkdownTOC -->
 
@@ -32,6 +35,12 @@ I created this repository to help remind myself how the `pandas` syntax works, a
 > TBD
 
 ## Testing
+
+These sections explain and show how to test this code and how it was tested during development.
+
+A nice reference on the different kinds of Software Testing for Python can be found here: https://realpython.com/python-testing/
+
+An introduction to `pytest` with technical details can be found here: https://docs.pytest.org/en/7.1.x/example/simple.html
 
 ### Unit-Tests
 
@@ -64,3 +73,7 @@ TOTAL                                            2      0   100%
 
 =========================================== 1 passed in 0.27s ============================================
 ````
+
+## License (Copyright)
+
+See [LICENSE](./LICENSE) file.
