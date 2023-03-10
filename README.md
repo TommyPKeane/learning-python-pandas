@@ -1,79 +1,53 @@
-# pandas Demos
+# `pandas` for Data Analytics & Engineering
 
-Example code using the Python `pandas` package for demonstration and (educational) reference.
-
-See here: https://pandas.pydata.org/docs/
+__tommy teaches tommy__ (_and anyone else who cares to read all this_) about software development and coding with the [`pandas`]( https://pandas.pydata.org/docs/) third-party package in Python for managing and manipulating data with varying levels of complexity.
 
 The `pandas` library provides a `Series`, `DataFrame`, and `MultiIndexDataFrame` set of utility functions and classes for organising, accessing, and processing tabular data (JSONs, CSVs, Parquet files, _etc._). Some of the syntax and implementation is non-standard in comparison to most Python code, so this reference repository should be a helpful means of pointing out some of the quirks of using `pandas`.
 
-I created this repository to help remind myself how the `pandas` syntax works, and to test out some other features. This is available for general reference, in case it's helpful to anyone else.
-
 <!-- MarkdownTOC -->
 
-- Developer Setup
-- Local Package: `pandas_demos`
-- Testing
-    - Unit-Tests
-- License \(Copyright\)
+- [Local Package: `pandas_demos`](#local-package-pandas_demos)
+- [Developer Setup](#developer-setup)
+- [Testing](#testing)
+- [What's this "tommy teaches tommy" thing all about?](#whats-this-tommy-teaches-tommy-thing-all-about)
+- [License \(Copyright\)](#license-copyright)
+- [References](#references)
 
 <!-- /MarkdownTOC -->
 
-
-## Developer Setup
-
-- https://direnv.net/
-- https://github.com/pyenv/pyenv
-
-1. `pyenv install` -- skip this if you already have the version on your system
-1. `direnv allow`
-1. `pip install --upgrade pip`
-1. `pip install poetry` -- Assumes `poetry >= 1.20.0`
-1. `poetry install`
-
+<a id="local-package-pandas_demos"></a>
 ## Local Package: `pandas_demos`
 
 > TBD
 
+<a id="developer-setup"></a>
+## Developer Setup
+
+See the [`CONTRIBUTING.md`](./CONTRIBUTING.md) file for details on how to setup your system to use this code and/or how to be able to update or modify the code for your own purposes.
+
+<a id="testing"></a>
 ## Testing
 
-These sections explain and show how to test this code and how it was tested during development.
+See the [`TESTING.md`](./TESTING.md) file for details on the currently supported testing configured in this repository and how to run those tests.
 
-A nice reference on the different kinds of Software Testing for Python can be found here: https://realpython.com/python-testing/
+<a id="whats-this-tommy-teaches-tommy-thing-all-about"></a>
+## What's this "tommy teaches tommy" thing all about?
 
-An introduction to `pytest` with technical details can be found here: https://docs.pytest.org/en/7.1.x/example/simple.html
+_"What's in a name?"_
 
-### Unit-Tests
+You can see a rambly explanation [here at my personal website](https://tommypkeane.com/about-tommy/tommy-teaches-tommy.html); but, in short:
 
-Run:
+I'm just trying to say that I'm writing out what I think is helpful/interesting to me, and I'm sharing it in case it's helpful to anyone else, but please know that I'm ___not___ trying to talk _down_ to anyone :smile: (except maybe myself :ghost:).
 
-```bash
-pytest
-```
-
-This should produce an output that looks like:
-
-```bash
-========================================== test session starts ===========================================
-platform darwin -- Python 3.10.7, pytest-7.2.0, pluggy-1.0.0
-rootdir: /Users/tommy/dev/tommypkeane/pandas_demos, configfile: pyproject.toml, testpaths: tests_unit
-plugins: hypothesis-6.56.3, cov-4.0.0
-collected 1 item
-
-tests_unit/pandas_demos/test_dataframe_examples.py .
-
----------- coverage: platform darwin, python 3.10.7-final-0 ----------
-Name                                         Stmts   Miss  Cover
-----------------------------------------------------------------
-pandas_demos/__init__.py                         0      0   100%
-pandas_demos/dataframe_examples.py               2      0   100%
-pandas_demos/dataframe_groupby_examples.py       0      0   100%
-pandas_demos/series_examples.py                  0      0   100%
-----------------------------------------------------------------
-TOTAL                                            2      0   100%
-
-=========================================== 1 passed in 0.27s ============================================
-````
-
+<a id="license-copyright"></a>
 ## License (Copyright)
 
-See [LICENSE](./LICENSE) file.
+Copyright (c) Tommy P. Keane, 2023 (https://www.tommypkeane.com)
+
+See the [LICENSE](./LICENSE) file.
+
+<a id="references"></a>
+## References
+
+- https://github.com/tommypkeane/learning-python
+- https://pandas.pydata.org/docs/
